@@ -25,10 +25,10 @@ smash = 0
 juanitas = 0
 arbys = 0
 chickfila = 0
-jimmyjohns = 0
+subway = 0
 popeyes = 0
 
-totalsdic = {"pdq":pdq,"torchys":torchys,"mods":mods,"freebirds":freebirds,"canes":canes,"mypizzaria":mypizzaria,"whataburger":whataburger,"potbelly":potbelly,"tacobell":tacobell,"smash":smash,"juanitas":juanitas,"arbys":arbys,"chickfila":chickfila,"jimmyjohns":jimmyjohns,"popeyes":popeyes}
+totalsdic = {"pdq":pdq,"torchys":torchys,"mods":mods,"freebirds":freebirds,"canes":canes,"mypizzaria":mypizzaria,"whataburger":whataburger,"potbelly":potbelly,"tacobell":tacobell,"smash":smash,"juanitas":juanitas,"arbys":arbys,"chickfila":chickfila,"subway":subway,"popeyes":popeyes}
 
 #functions
 def printline():
@@ -58,7 +58,7 @@ def counting():
     global juanitas
     global arbys
     global chickfila
-    global jimmyjohns
+    global subway
     global popeyes
 
     count = 1
@@ -92,7 +92,7 @@ def counting():
         elif x  == 13:
             totalsdic["chickfila"] += 1
         elif x  == 14:
-            totalsdic["jimmyjohns"] += 1
+            totalsdic["subway"] += 1
         elif x  == 15:
             totalsdic["popeyes"] += 1
         count += 1
