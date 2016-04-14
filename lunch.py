@@ -14,7 +14,10 @@ except ImportError:
         print "[*]----------------------------[*]"
 
 def lunch():
-    choices = {1:"PDQ",2:"Torchys",3:"MOD",4:"Freeibrds",5:"Popeyes",6:"My Pizzaria",7:"Whataburger",8:"Taco Bell",9:"Arbys",10:"Smash Burger",11:"Potbellys"} 
-    banner(choices[randrange(len(choices)+1)])
+    choices = {1:"PDQ",2:"Torchys",3:"MOD",4:"Freebirds",5:"Popeyes",6:"My Pizzaria",7:"Whataburger",8:"Taco Bell",9:"Arbys",10:"Smash Burger",11:"Potbellys"} 
+    try:
+        banner(choices[randrange(len(choices)+1)])
+    except KeyError:
+        banner(choices[randrange(len(choices)+1)])
 
 lunch()
