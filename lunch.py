@@ -14,10 +14,9 @@ except ImportError:
         print "[*]----------------------------[*]"
 
 def lunch():
+    #this is a dic, examp: {1:"choice",2:"choice2"}
     choices = {1:"PDQ",2:"Torchys",3:"MOD",4:"Freebirds",5:"Popeyes",6:"My Pizzaria",7:"Whataburger",8:"Taco Bell",9:"Arbys",10:"Smash Burger",11:"Potbellys"} 
     try:
-        banner(choices[randrange(len(choices)+1)])
-    except KeyError:
-        banner(choices[randrange(len(choices)+1)])
+        banner(choices[randrange(len(choices))+1])
 
 lunch()
