@@ -1,6 +1,6 @@
 from app import app
 from flask import render_template
-import lunch
+from lunch import picker
 
 @app.route('/')
 @app.route('/index')
